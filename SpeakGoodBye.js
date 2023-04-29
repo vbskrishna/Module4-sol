@@ -1,12 +1,22 @@
-( function (window){
-  var byeSpeaker = {};
+// ( function (window){
+//   var byeSpeaker = {};
 
-  var speakWord = "Good Bye";
+//   var speakWord = "Good Bye";
 
-  byeSpeaker.speak = function(name){
-    console.log(speakWord + " " + name);
-  }
+//   byeSpeaker.speak = function(name){
+//     console.log(speakWord + " " + name);
+//   }
 
-  window.byeSpeaker = byeSpeaker;
+//   window.byeSpeaker = byeSpeaker;
+
+// })(window);
+
+(function(window) {
+	var speakWord = "Good Bye";
+	var byeSpeaker = function (name) {
+  		console.log(speakWord + " " + name);
+	}
+	
+	window.byeSpeaker = byeSpeaker;
 
 })(window);
